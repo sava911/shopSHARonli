@@ -1,0 +1,196 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.header__top {
+    padding-top: 30px;
+    margin-bottom: 25px;
+    line-height: 28px;
+}
+
+.header__top--items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top--item {}
+
+.menu__popup {}
+
+.visually-hidden {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: block;
+    background-color: rgb(152, 192, 77);
+    border: 1px solid rgb(152, 192, 77);
+    color: #fff;
+    padding: 0 15px;
+    line-height: 28px;
+    width: 100%;
+
+    &:hover {
+
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+.menu__list+.menu__list {
+    margin-left: 20px;
+}
+
+.menu__link {}
+
+
+.users {
+    display: flex;
+    justify-content: space-between;
+}
+
+.users__list+.users__list {
+    margin-left: 20px;
+}
+
+.users__list {
+    background-color: rgb(152, 192, 77);
+    border: 1px solid rgb(152, 192, 77);
+    color: #fff;
+    padding: 0 15px;
+
+    &:hover {
+
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+.whatsapp {}
+
+.entrance {}
+
+.basket {}
+
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+    padding-left: 30px;
+
+}
+
+.search {
+
+    width: 570px;
+    margin-top: 30px;
+    position: relative;
+
+    form {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    .input {
+        z-index: 1;
+        position: relative;
+    }
+
+    .ui-helper-hidden-accessible {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
+
+.search [type="text"] {
+    padding: 0 15px;
+    width: 521px;
+}
+
+input.form-control {
+    height: 50px;
+    line-height: 48px;
+}
+
+.field-label {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #abbcc8;
+    padding-right: 12px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-transition: top .1s linear, color .1s linear;
+    -o-transition: top .1s linear, color .1s linear;
+    transition: top .1s linear, color .1s linear;
+    z-index: 4;
+    width: 100%;
+    padding-right: 24px;
+}
+
+.search [type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ccc;
+    background: #000;
+    z-index: 4;
+}
+
+.phone {
+    margin-top: 30px;
+}
+
+.phone__number {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 3px;
+
+
+}
+
+.phone__link {
+    color: #03a9f4;
+}
+
+@import "media";

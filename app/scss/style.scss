@@ -65,6 +65,17 @@
 .logo__btn {
     width: 100%;
     padding: 0 15px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e9bd";
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
 }
 
 .menu__list+.menu__list {
@@ -171,7 +182,7 @@
         position: relative;
     }
 
-    .ui-helper-hidden-accessible {
+    .search__control {
         border: 0;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -230,26 +241,57 @@ input.form-control {
     border: 1px solid #000;
     background: #fff;
     z-index: 4;
+        background: url(../images/search.png) no-repeat left center;
 
 
 }
 
+
 .phone {
-    margin-top: 15px;
+    margin-top: 5px;
+
 }
 
 .phone__number {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 3px;
 
 
 }
 
+.phone-icon {
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e958";
+        position: absolute;
+        top: 0;
+        left: 15px;
+
+
+    }
+}
+
+.mail-icon {
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e945";
+        position: absolute;
+        top: 0;
+        left: 15px;
+
+
+    }
+}
+
 .phone__link {
     color: #03a9f4;
     display: block;
-    padding-left: 30px;
+    padding-left: 40px;
     margin-bottom: 5px;
 }
 

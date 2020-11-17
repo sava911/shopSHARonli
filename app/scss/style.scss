@@ -20,7 +20,20 @@
     justify-content: space-between;
 }
 
-.header__top--item {}
+.mode {
+    padding-left: 20px;
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e952";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000;
+    }
+}
+
 
 .menu__popup {}
 
@@ -38,15 +51,20 @@
     background-color: rgb(152, 192, 77);
     border: 1px solid rgb(152, 192, 77);
     color: #fff;
-    padding: 0 15px;
+
     line-height: 28px;
-    width: 100%;
+
 
     &:hover {
 
         color: #000;
         background-color: #fff;
     }
+}
+
+.logo__btn {
+    width: 100%;
+    padding: 0 15px;
 }
 
 .menu__list+.menu__list {
@@ -66,23 +84,60 @@
 }
 
 .users__list {
-    background-color: rgb(152, 192, 77);
-    border: 1px solid rgb(152, 192, 77);
-    color: #fff;
+
     padding: 0 15px;
 
-    &:hover {
 
-        color: #000;
-        background-color: #fff;
+}
+
+.button__popup {
+    position: relative;
+
+    &::before {
+        font-family: 'icomoon' !important;
+
+        position: absolute;
+        top: -5px;
+        right: -20px;
+        content: "\ea50";
+        font-size: 18px;
+        transform: rotate(180deg);
+        font-weight: 700;
+
     }
 }
 
-.whatsapp {}
+.whatsapp {
+    padding-left: 35px;
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\ea93";
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 18px;
+
+    }
+}
 
 .entrance {}
 
-.basket {}
+.basket {
+    padding-left: 35px;
+    position: relative;
+
+    &::after {
+        font-family: 'icomoon' !important;
+        content: "\e93a";
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 18px;
+
+    }
+}
 
 
 .header__bottom {
@@ -99,7 +154,7 @@
 .search {
 
     width: 570px;
-    margin-top: 30px;
+    margin-top: 20px;
     position: relative;
 
     form {
@@ -172,13 +227,15 @@ input.form-control {
     cursor: pointer;
     border: none;
     outline: none;
-    border-left: 1px solid #ccc;
-    background: #000;
+    border: 1px solid #000;
+    background: #fff;
     z-index: 4;
+
+
 }
 
 .phone {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .phone__number {
@@ -191,6 +248,9 @@ input.form-control {
 
 .phone__link {
     color: #03a9f4;
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 5px;
 }
 
 @import "media";

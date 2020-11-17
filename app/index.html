@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>sharPro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/font-style.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,7 +17,7 @@
     <div class="container">
       <div class="header__top">
         <div class="header__top--items">
-          <div class="header__top--item">
+          <div class="header__top--item mode">
             Ежедневно с 9 до 21 по Москве
           </div>
           <div class="header__top--item">
@@ -24,7 +27,7 @@
               <li class="menu__list"><a class="menu__link" href="#" title="Отзывы">Отзывы</a></li>
               <li class="menu__list"><a class="menu__link" href="#" title="Скидки">Скидки</a></li>
               <li class="menu__list"><a class="menu__link" href="#" title="Контакты">Контакты</a></li>
-              <li class="menu__list"><a class="menu__link" href="#" title="О компании">О компании</a>
+              <li class="menu__list"><a class="menu__link button__popup" href="#" title="О компании">О компании</a>
                 <ul class="menu__popup visually-hidden">
                   <li class="menu__menu__popup--list"><a href="#" class="menu__link" title="Вопросы">Вопросы</a></li>
                   <li class="menu__menu__popup--list"><a href="#" class="menu__link" title="Новости">Новости</a></li>
@@ -38,9 +41,9 @@
           </div>
           <div class="header__top--item">
             <ul class="users">
-              <li class="users__list whatsapp"><a class="users__link" href="#">Онлайн-оплата</a></li>
-              <li class="users__list entrance"><a class="users__link" href="#">Войти</a></li>
-              <li class="users__list basket"><a class="users__link" href="#">Нет товаров</a></li>
+              <li class="users__list button whatsapp"><a class="users__link" href="#">Whatsapp</a></li>
+              <li class="users__list button entrance"><a class="users__link" href="#">Войти</a></li>
+              <li class="users__list button basket"><a class="users__link" href="#">Нет товаров</a></li>
             </ul>
           </div>
         </div>
@@ -48,7 +51,7 @@
       <div class="header__bottom">
         <div class="logo">
           <a href="#" class="logo__link"><img src="images/logo.png" alt=""></a>
-          <button class="button" type="submit">Каталог</button>
+          <button class="logo__btn button" type="submit">Каталог</button>
         </div>
         <div class="search">
           <form method="get" action="search">
@@ -63,6 +66,7 @@
         <div class="phone">
           <a class="phone__number" href="tel:88007005683">8 800 700 56 83</a>
           <div class="callback">
+            <a class="phone__link" href="mailto:sales@pack24.ru">sales@pack24.ru</a>
             <a class="phone__link" href="#callback">Перезвоните мне</a>
           </div>
         </div>
